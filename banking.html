@@ -1,434 +1,404 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banking Guides</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Banking Guides</title>
-
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <style>
-
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-    body, html {
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<style>
+body, html {
   height: 100%;
-  line-height: 1.8;
-  background-image: url("https://oneservice.service-now.com/668f652fdbd477403db3ca21399619f0.iix");
-  background-size: cover;
+  font-family: 'Rubik', sans-serif;
+}
+
+.bgimg {
   background-position: center;
+  background-size: cover;
+  background-image: url("https://oneservice.service-now.com/668f652fdbd477403db3ca21399619f0.iix");
+  min-height: 100%;
 }
 
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-
-        /* Modal Content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-        }
-
-         .modal-content1 {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 85%;
-        }
-
-        /* The Close Button */
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-    .button {
-  position: absolute;
-  left:; 0
-  top:50%;
-  width: 100%;
-  text-align: center;
+.menu {
+  display: none;
 }
-
-    </style>
-</head>
+</style>
 <body>
 
-    <h1 class="w3-center w3-xxxlarge w3-hide-small w3-text-red">Banking Guides</h1>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-large">
+      <div class="w3-dropdown-hover">
+      <button class="w3-button w3-black w3-hover-text-red w3-mobile" style="width:283px">C-SERIES</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button onclick="document.getElementById('id01').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">ADD USER</button>
+        <button onclick="document.getElementById('id02').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">PASSWORD RESET</button>
+        <button onclick="document.getElementById('id03').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">DELETE USER</button>
+        <button onclick="document.getElementById('id04').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">APPROVE CHANGE</button>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-black w3-hover-text-red w3-mobile" style="width:283px">BARCLAYS PRECISIONPAY</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button onclick="document.getElementById('id05').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">CREATE USER</button>
+        <button onclick="document.getElementById('id06').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">SEARCH USERS</button>
+        <button onclick="document.getElementById('id07').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">MAINTAIN USERS</button>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-black w3-hover-text-red w3-mobile" style="width:283px">BANKLINE</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button onclick="document.getElementById('id08').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">CREATE USER</button>
+        <button onclick="document.getElementById('id09').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">AUTHORISE CHANGE</button>
+        <button onclick="document.getElementById('id10').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">DELETE USER</button>
+        <button onclick="document.getElementById('id11').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">FAQ</button>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-black w3-hover-text-red w3-mobile" style="width:283px">BNP PARIBAS</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button onclick="document.getElementById('id12').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">CREATE USER</button>
+        <button onclick="document.getElementById('id13').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">MANAGE USER SECURITY</button>
+      </div>
+    </div>
+      <div class="w3-dropdown-hover">
+      <button class="w3-button w3-black w3-hover-text-red w3-mobile" style="width:283px">HSBCnet</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button onclick="document.getElementById('id16').style.display='inline-block'" class="w3-button w3-blue w3-bar-item w3-center w3-mobile" style="width:283px">CREATE USER</button>
+      </div>
+    </div>
+      <div class="w3-dropdown-hover">
+      <button class="w3-button w3-black w3-hover-text-red w3-mobile" style="width:283px">BARCLAYSnet</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      </div>
+    </div>
+  </div>
+</div>
 
-    <h2 class="w3-margin-left w3-xxlarge w3-text-red"><b>C-Series</b></h2>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-red" style="font-size:90px">Banking<br>Guides</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
 
-    <!-- Trigger/Open The Modal -->
-    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
-    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Modify User/Reset Password</b></button>
-    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Delete User</b></button>
-    <button class="myBtn_multi w3-bar-item w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Approve Change</b></button>
-
-    <!-- The Modal -->
-    <div class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>Create a New User</b></h1>
-   <p>You can add a new user via the Client Maintenance tab</p>
-   <img src="C:\Users\dabaile\Pictures\Annotation 2020-01-14 125841.png" class="w3-display-container w3-display-center">
-   <p><b>To add a Client User</b></p>
+<div id="id01" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Add User</h2>
+    </header>
+    <div class="w3-container">
+      <p>You can add a new user via the Client Maintenance tab</p>
+      <img src="Images\C-Series\Annotation 2020-01-14 125841.png" style="max-width:100%">
+      <p><b>To add a Client User</b></p>
    <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li><li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Add</b></li><li>On the Client User screen, in the User Group field, click the cllipsis, and select a Client User Group to associate with this Client User.<li>Type an appropriate User ID, Username and Password.</li><li>Enter Users email address</li><li>Select correct <b>Locale</b> and <b>Time Zone</b></li><li>Choose correct Data Role for Client User</li><li>On the bottom of the screen, click <b>Add</b>.</li></ol></p>
   <p>You now need to add Function Roles.</p>
-  <img src="C:\Users\dabaile\Pictures\Annotation 2020-02-28 095239.png">
+  <img src="Images\C-Series\Annotation 2020-02-28 095239.png" style="max-width:100%">
   <p><b>To add Function Roles</b></p>
   <ol type="1"><li>On the User Function Roles screen, click <b>Add Function Roles</b> to assign roles to your user. The Add Function Role filter screen appears</li><li>On the Add Function Role filer screen, highlight the role or roles you wish to assign to your user.</li><li>Click the single right arrow to select one role and the double right arrow to select all roles</li><li>Once you have finished selecting roles, at the top of the screen click Save. A dialog box appears</li><li>In the dialog box, click <b>OK.</b> The Add User screen appears with the Funtion Roles added at the bottom</li></ol>
-   <p><img src="C:\Users\dabaile\Pictures\Annotation 2020-02-28 141917.png"></p>
-  On the bottom of the screen, click <b>Update</b><br><br>You have successfully added a client user.<br><br>When Client Users are added, their status will be "EN" (Entered). Once a Client User has been added, you must approve the addition.</p>
-        </div>
-
+  <img src="Images\C-Series\Annotation 2020-02-28 141917.png" style="max-width:100%">
+  <p>On the bottom of the screen, click <b>Update</b><br><br>You have successfully added a client user.<br><br>When Client Users are added, their status will be "EN" (Entered). Once a Client User has been added, you must approve the addition.</p>
+  <br>
     </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>Modify a User/Reset Password</b></h1>
-   <p>Once a Client User is added, you can reconfigure that User, as necessary.</p>
+  </div>
+</div>
+<div id="id02" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id02').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Password Reset</h2>
+    </header>
+    <div class="w3-container">
+      <p>Once a Client User is added, you can reconfigure that User, as necessary.</p>
    <p><i>Note: You cannot change a Client User's User Group or User ID once they have been established</i></p>
    <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li><li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Modify.</b></li><li>On the filter screen, select filter criteria, and/or click<b>Enter.</b></li><li>Select the User Group you want to work with</li><li>On the Client User screen, modify any information as needed (eg. reset password)</li><li>If you want to assisgn roles to that User, click <b>Roles.</b></li><li>Click <b>Update</b> and <b>OK</b> on the confirmation prompt.</li><br>You have successfully modified the client user.</ol>
    <p><i>Note:</i><ul><li><i>Fields shaded light blue are mandatory.</i></li><li><i>Click Reset to clear the details that were entered in the Client user screen</i></li><li><i>Click Back to select another User</i></li></ul>
-        </div>
-
+     <br>
     </div>
-
-    <!-- The Modal -->
-    <div class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>Delete a User</b></h1>
-   <p>In certain business occasions, you will need to delete a user. However, this should be carried out with extreme caution. Hot all fields can be modified from this view.</p>
-   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Delete.</b><li>On the filter screen, select filter criteria, and/or click <b>Enter</b></li><li>Select the user you want to remove.</li><li>On the Client User screen, click <b>Delete.</b></li></ol><br>You have successfully deleted the client user.
-        </div>
-
+  </div>
+</div>
+<div id="id03" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id03').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Delete User</h2>
+    </header>
+    <div class="w3-container">
+      <p>In certain business occasions, you will need to delete a user. However, this should be carried out with extreme caution. Hot all fields can be modified from this view.</p>
+   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Delete.</b><li>On the filter screen, select filter criteria, and/or click <b>Enter</b></li><li>Select the user you want to remove.</li><li>On the Client User screen, click <b>Delete.</b></li></ol><br>You have successfully deleted the client user.</p>
+     <br>
     </div>
-
-    <!-- The Modal -->
-    <div class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>Approve a Change</b></h1>
-   <p>Once one administrator has created a Client User, a sencond administrator must log in to approve the newly created User.</p><br>
-   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li><li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Approve</b></li><li>On the filter screen, select the filter criteria, and/or click <b>Enter.</b></li><li>On the grid, check the Client Users you want to approve, and click <b>Approve.</b></li></ol><br>You have successfully approved the client user.
-        </div>
-
+  </div>
+</div>
+<div id="id04" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id04').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Approve Change</h2>
+    </header>
+    <div class="w3-container">
+      <p>Once one administrator has created a Client User, a sencond administrator must log in to approve the newly created User.</p><br>
+   <ol type="1"><li>Log onto C Series Admin as a valid administrator user</li><li>With the <b>Client Maintenance</b> tab in focus, select <b>Setup - Client User,</b> and click <b>Approve</b></li><li>On the filter screen, select the filter criteria, and/or click <b>Enter.</b></li><li>On the grid, check the Client Users you want to approve, and click <b>Approve.</b></li></ol><br>You have successfully approved the client user.</p>
+     <br>
     </div>
+  </div>
+</div>
+<div id="id05" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id05').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Add User</h2>
+    </header>
+    <div class="w3-container">
+      <img src="Images/Precisionpay/Precisionpay Web Portal Admin Guide V2.4 Oct18-page-008.jpg" style="max-width:100%"</img>
+      <p><ol type="1"><li>From the Administrators page click on Create New User.</li><li>Select User Name(Prefix will be auto completed)</li><li>Select Role (Search Only/Deployer/Approver 1/Approver 2)</li></p>
+      <p><i>If creating a Deployer or Approver 1, then an additional field will refresh for Approval. This is where you assign the approval manager to that user.</i></p>
+      <li>Please ensure Send Welcome Email is selected, this will send a link to the new user to allow them to complete their registration. <b>*The link can only be accessed once and expires after 2 hours.*</b></li></ol>
+      <img src="Images/Precisionpay/Precisionpay Web Portal Admin Guide V2.4 Oct18-page-009.jpg" style="max-width:100%"</img>
+      <p>The screen will refresh and allow you to define:</p>
+      <p><ul type="1"><li><b>Card Pool Access</b> (just check or uncheck the box to control access to cardpools). If you want to give access to all cardpools, check the access all checkbox (top right)</li>
+        <li><b>Threshold</b> for the pre-approval. Within this threshold the Deployer will get cards back without approval, or for a Approver 1, this is their approval limit before a deployment goes to Approver 2.</li></ul>
+        <p><b>Search</b> only & Approver 2 have no thresholds (search because they cannot create deployements and Approver 2 because their approval is limitles)</p>
+        <p>Click <b>Create User</b>, this will send the link to the user to allow them to complete the registration and login process.</p>
+        <p><i>Note: you will still need to email them their User Name to be used for future logins</i></p>
+  <br>
+    </div>
+  </div>
+</div>
+<div id="id06" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id06').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Search Users</h2>
+    </header>
+    <div class="w3-container">
+      <img src="Images/Precisionpay/Precisionpay Web Portal Admin Guide V2.4 Oct18-page-010.jpg" style="max-width:100%"</img>
+      <p>From the Administration, User Search button you can</p>
+      <p><ul type="1"><li>Search Users</li><li>View and create delegations</li></ul></p>
+      <p>To search for existing users, enter the required user data and click <b>Search</b></ul></p>
+     <br>
+    </div>
+  </div>
+</div>
+<div id="id07" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id07').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Maintain Users</h2>
+    </header>
+    <div class="w3-container">
+      <img src="Images/Precisionpay/Precisionpay Web Portal Admin Guide V2.4 Oct18-page-011.jpg" style="max-width:100%"</img>
+      <p>Follow the User Search process and then maintain the neccessary fields. These include:</p>
+      <p><ul type="1"><li><b>General</b> contact details/security information</li>
+        <li><b>Role</b> cannot be maintained. If someone needs to change roles, you need to submit a request to Barclaycard Support (Technical Helpdesk) and they will arrange the amendment for you</li>
+        <li><b>Disable/Re-enable</b> to prevent a user from accessing the system, check them as Disabled.</li>
+        <li><b>Locked out/Unlock</b> - a user can be manually locked out by an administrator or through three invalid access attempts. Users can be unlocked by an administrator or by your Barclaycard support team.</li></ul></p>
+        <p><i>Note: for security reasons, users are not told they are locked out, only that their login was unsuccessful. Lockout occurs after 3 unsuccessful login attempts.</i></p>
+     <br>
+    </div>
+  </div>
+</div>
+<div id="id08" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id08').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Create User</h2>
+    </header>
+    <div class="w3-container">
+      <ol type="1"><li>From 'Administration' section, select 'Manage Users'.</li><li>Select 'Create User'</li><li>Enter the details for your user (name, email address, contact numbers, postal address, etc), create a User ID, set a payment authorisation limit if required then hit 'Continue'</li><li>You can assignroles by checking the box next to the relevant role. When you've finished, hit 'Continue'</li><li>Depending on the role(s) you assign, you may need to authorise the changes using your Smartcard and card reader.</li><li>Finally, hit 'Confirm New User' and tell the new user to expect an email containing their activation code. For security reasons, we send Smartcards and card readers to the administrator who created the new user. They should arrive within five business days of the email</li><li>Once the user receives their activation code, they'll need to use this to login along with their 'Customer ID' and 'User ID'. The customer ID is the same one used by every user on your Bankline profile and the user ID will be the one you've created for them (as per the steps above). You'll need to share both these IDs with them.</li></ol>
+  <br>
+    </div>
+  </div>
+</div>
+<div id="id09" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id09').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Authorise Change</h2>
+    </header>
+    <div class="w3-container">
+      <p>For any action subject to 'Dual administration', a second user needs to review the changes that the first user has made and either approve or reject them.</p>
+          <p>To do this:</p>
+          <ol type="1"><li>Go to the 'Authorise change' screen, which shows any pending changes you can authorise</li><li>Under the heading 'Details' select the change you want to approve or reject</li><li>From here you can select to either accept or reject the changes</li><li>If this change requires a Smartcard, you'll be prompted to use it</li></ol>
+          <p><i>Handy tip - You can't view or approve any changes you've made yourself.</i></p>
+     <br>
+    </div>
+  </div>
+</div>
+<div id="id10" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id10').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Delete User</h2>
+    </header>
+    <div class="w3-container">
+      <p>You must be an administrator to delete users:</p>
+          <ol type="1"><li>1.In the 'Administration' section, select 'Manage Users'.</li><li>2.Select the User ID of the relevant user and select 'Delete User'.</li></ol>
+     <br>
+    </div>
+  </div>
+</div>
+<div id="id11" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id11').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">FAQ</h2>
+    </header>
+    <div class="w3-container">
+      <h2><i>How do I get a replacement card reader or Smartcard?</i></h2>
+          <p><b>To order a Smartcard reader:</b></p>
+          <ol type="1"><li>From 'Administration' section, select 'Manage Users'</li><li>Select 'Order Smartcard reader'</li><li>Hit 'Continue', then 'Confirm'</li></ol>
+          <p><b>To order a replacement Smartcard:</b></p>
+          <ol type="1"><li>From 'Administration' section, select 'Manage Users'</li><li>Select relevant User ID</li><li>Scroll to the bottom and select 'Edit roles/Smartcard'</li><li>Now hit 'Order replacement Smartcard'</li><li>Select the address you'd like it sent to</li><li>If you want to order a Smartcard reader at the same time, check the 'New Smartcard reader required' box</li><li>Finally, hit 'Continue' then 'Confirm'</li></ol>
+          <p>Reminder: if you have Dual administration switched on, you'll need a second administrator to authorise your order</p>
+          <h2><i>My user has got their login details wrong and is now locked out of Bankline, how do I re-activate them?</i></h2>
+          <p>To help them regain access you can use the following options:</p>
+          <ol type="1"><li>If the user still remembers their PIN and password, go to 'Manage Users'</li><li>Select the User ID and then hit 'Re-instate User'</li><li>If they don't remember their PIN and password, from 'Manage Users' select the 'User ID'</li><li>Select 'Order Activation Code'</li></ol>
+          <h2><i>How do I re-instate a user who entered their PIN or password incorrectly?</i></h2>
+          <p>If a user has entered their PIN or password incorrectly, but they know the correct details, an administrator can re-instate them.</p>
+          <ol type="1"><li>From 'Administration' select 'Manage Users'</li><li>Click on the relevant User ID</li><li>Select 'Re-instate User'. The user will now be able to log in to the system using their exisiting PIN and password</li></ol>
+          <p><i>Handy hint: the user status on the 'Manage Users' screen needs to be disabled for the option to be available.</i></p>
+          <h2><i>How do I view, edit, delete or suspend users?</i></h2>
+          <ol type="1"><li>From 'Administration', select 'Manage Users'</li><li>Select the relevant User ID</li><li>3.This opens the 'Edit User' screen. From here you can view and edit the user's details and click through to edit roles, order a new activation code, and suspend or delete the user.</li></ol>
+          <p>If you have any further issues please visit: <a href="#" onclick=" window.open('https://help.bankline.rbs.com/help/administration/')">Admin Help Page</a></p>
+     <br>
+    </div>
+  </div>
+</div>
+<div id="id12" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id12').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Create User</h2>
+    </header>
+    <div class="w3-container">
+      <p>To create a new user, click on <b>Users</b> from the main user management screen.</p>
+      <ul type="1"><li>Click on <b>Create User</b></li>
+        <img src="Images/BNP/create_user_button.png" style="max-width:20%"</img>
+        <li>Enter the user email address and click on <b>Verify Email</b></li>
+        <li>If the e-mail address already exists within Connexis Cash, you will need to confirm whether you want to grant the user access to this new entity. The entity will be added to the users existing profile</li>
+        <br><img src="Images/BNP/create_user_dialog.png" style="max-width:50%"</img><br>
+        <p>Fill in the user and token activation information on the new screen</p>
+        <li>Enter the first and last name, and confirm the email address</li>
+        <li>Choose the type of user token: <b>mobile application</b> or <b>physical token<</p></li>
+          <br><img src="Images/BNP/token_type.png" style="max-width:20%"</img><br>
+          <li>If the <b>mobile application</b> is chosen, enter a valid mobile (recommended) or a landline phone number. The new user will receive an SMS/landline call with a code to launch the activation process.</li>
+          <li>If the <b>physical token</b> is selected, choose a token activation method (digital or sealed letter) and enter a phone number and a mailing address.</li>
+          <li>For a <b>digital</b> process (recommended), enter a mobile number for receiving an SMS.</li>
+          <li>If there is no mobile number, enter a <b>landline</b> number for receiving a token activation code via a call from the bank.</li>
+          <li>For a <b>sealed letter</b> process, enter a mailing address. A paper sealed letter will be sent to the physical address.</li>
+          <br><img src="Images/BNP/token_enablement.png" style="max-width:10%"</img><br>
+          <li>Click on <b>Create</b> to submit the request</li></ul>
+          <h2 class="w3-margin-left"><b>Dual approval</b></h2>
+          <p>In case of a dual approval, the status will be <b>Pending creation</b> after the submission. Another administrator needs to approve the creation. Once the status is active, the token activation will be triggered via e-mail<p>
+     <br>
+    </div>
+  </div>
+</div>
+<div id="id13" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id13').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Managing user security access right</h2>
+    </header>
+    <div class="w3-container">
+      <p>The <b>Users</b></b> menu displays all the registered users along with their details in <b>Administration > User management > Users.</b></p>
+      <p>Navigate to the <b>Users details</b> screen by double-clicking on a user</p>
+      <ul type="1"><li><b>Identification:</b> Review user information and inform the bank representatives of any changes</li>
+        <li><b>Security Access:</b> Define and manage the user's security and access rights.</li>
+        <li><b>Profiles:</b> Assign profiles to the users</li>
+        <br><img src="Images/BNP/managing-user-security-description.png" style="max-width:30%"</img><br>
+        <p>Assign or modify access rights to user(s) from <b>Users</b> menu.</p>
+        <p>By default, users are set as <b>Watchers</b> with no permissions.</p>
+        <h2 class="w3-margin-left"><b>Assigning user rights</b></h2>
+        <li>Double-click on a user</li>
+        <li>Review data in the <b>Identification</b> tab.</li>
+        <li>Click <b>Submit</b> if any new information has been entered.</li>
+        <h2 class="w3-margin-left"><b>Assigning user rights</b></h2>
+        <li>Click on the <b>Security access</b> tab.</li>
+        <li>Select a user type from: <b>Watcher/Initiator/Authorizer/Sender/Checker</b></li>
+        <li>For authorizers, assign an authorization group. The authorization groups can be defined in detail in the <b>Authorization</b> menu. Payment permissions will be displayed corresponding to the selected user type.</li>
+        <li>Choose the payment rights:</li><ul type="1"><li><b>View payroll</b> - View the payroll details</li><li><b>Delete or restore</b> - Delete or restore payments</li>
+          <li><b>Cancel</b> - Cancel payments</li><li><b>Create a counterparty</b> - Create and savbeneficiaries/drawees</li><li><b>Mobile accessibility</b> - Access on a mobile</li>
+          <li><b>Same security access as</b> - Copy security access rights from another user. Further modifications can be performed without modifying the original user’s rights</li>
+          <li><b>Authorization level</b> - Applicable only for the simple payment authorization mode. An authorizer can sign (single) or may require a second authorizer (double)</li>
+          <li><b>FX interactive</b> - Ability to book an FX rate</li><li><b>Simplified authorization</b> - Simpler authorization process is possible</li>
+          <li><b>Cannot sign own payment</b> - Restrict the authorizer from signing own payment</li><li><b>Cannot sign own payment alone</b> - Restrict the authorizer from signing own payment on their own, but allow signing with other authorizers</li>
+          <li><b>Allow mobile authorization</b> - Authorize payments from a mobile</li><li><b>Allow once-off beneficiary/drawee</b> - Create and use a beneficiary/drawee without saving it to the database</li></ul>
+          <br><img src="Images/BNP/assign_user_access_right.png" style="max-width:50%"</img><br>
+          <li>Click on <b>Submit</b> to assign rights or <b>Reset</b> to revert to the previous settings</li>
+          <br><img src="Images/BNP/reset_submit_button.png" style="max-width:20%"</img><br>
+         <br>
+    </div>
+  </div>
+</div>
+<div id="id16" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue">
+      <span onclick="document.getElementById('id16').style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-center">Create User</h2>
+    </header>
+    <div class="w3-container">
+      <p>As a System Administrator, use the Simplified New User Creation procedure to partially register new End Users or System Administrators first, thereafter
+        allowing them to complete the rest of the registration and activate their HSBCnet access.</p>
+        <p>To register a new User with this Simplified New User Creation, complete the following steps:
+          <ol type="1"><li>Log on to HSBCnet and access the User Management service under the User and Account Management tab.</li>
+            <li>Select the <b>Create new user</b> link to proceed</li>
+            <br><img src="Images/HSBCnet/create_new_user_link.png" style="max-width:100%"</img><br>
+            <li>Authenticate yourself using your Security Device, by following the on-screen instructions.</li>
+            <li>The <b>Create New User</b> page appears. To speed up the registration process, you are only required to complete the mandatory fields marked with an asterisk (*).
+              The new user will be asked to confirm the information you've entered and supply additional information.</li>
+              <h2 class="w3-margin-left"><b>Step 1: Enter new users's details</b></h2>
+              <li><b>Step 1. Enter new user's details:</b> Complete the mandatory fields in each of the following sections in this step:<ul type="1"><li><b>Personal details</b></li>
+                <li><b>Contact details</b></li><li><b>User details, and</b></li><li><b>Log on (method)</b></li></ul>
+                <h6 class="w3-margin-left"><b>Personal details</b></h6>
+                <img src="Images/HSBCnet/personal_details.png" style="max-width:100%"</img><br>
+                <h6 class="w3-margin-left"><b>Contact details</b></h6>
+                <img src="Images/HSBCnet/contact_details.png" style="max-width:100%"</img><br>
+                <h6 class="w3-margin-left"><b>User details</b></h6>
+                <img src="Images/HSBCnet/user_details.png" style="max-width:100%"</img><br>
+                <h6 class="w3-margin-left"><b>Log on section - example</b></h6>
+                <img src="Images/HSBCnet/logon.png" style="max-width:100%"</img><br>
+                <li>When finished, choose <b>Review</b> to proceed to the next step.</li>
+                  <h2 class="w3-margin-left"><b>Step 2: Review and confirm</b></h2>
+                  <li><b>Step 2: Review and confirm.</b> In this step you are able to review the information entered in the previous step.</li>
+                  <ul type="1"><li>Choose <b>Confirm and edit permissions</b> (this option is available if your role/access level allows you to edit user permissions).
+                    You can select the appropriate permissions to HSBCnet service you wish to grant this user. This step is optional at this point.</li>
+                    <li>Choose <b>Confirm</b> (if you see this option, you do not have the access to edit user permissions). Proceed to complete the new user creation process.
+                      User permissions must be edited by another System Administrator with suitable access level to do so</li></ul></ol>
+                      <h6 class="w3-margin-left"><b>Review and Confirm</b></h6>
+                      <img src="Images/HSBCnet/review_user.png" style="max-width:100%"</img><br>
+                      <h2 class="w3-margin-left"><b>Granting user permissions</b></h2>
+                <p>Granting permissions to HSBCnet services: If you choose to proceed with granting permissions, you can:<p>
+                  <ul type="1"><li>Copy and modify permissions from an existing user, or</li>
+                    <li>Grant customised permissions for each service/feature</li></ul>
 
-    <h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>Precision Pay</b></h2>
-
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Search Users</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Maintain Users</b></button>
+         <br>
+    </div>
+  </div>
 </div>
 
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content1">
-            <span class="close close_multi">×</span>
-            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-008.jpg">
-            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-009.jpg">
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content1">
-            <span class="close close_multi">×</span>
-            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-010.jpg">
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content1">
-            <span class="close close_multi">×</span>
-            <img src="C:\Users\dabaile\Pictures\Precisionpay Web Portal Admin Guide V2.4 Oct18\Precisionpay Web Portal Admin Guide V2.4 Oct18-page-011.jpg">
-    </div>
-
-</div>
-
-    <h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>Bankline</b></h2>
-
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Authorise Changes</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Delete User</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>FAQ</b></button>
-</div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>Create a New User</b></h1>
-            <ol type="1"><li>From 'Administration' section, select 'Manage Users'.</li><li>Select 'Create User'</li><li>Enter the details for your user (name, email address, contact numbers, postal address, etc), create a User ID, ets a payment authorisation limit if required then hit 'Continue'</li><li>You can assignroles by checking the box next to the relevant role. When you've finished, hit 'Continue'</li><li>Depending on the role(s) you assign, you may need to authorise the changes using your Smartcard and card reader.</li><li>Finally, hit 'Confirm New User' and tell the new user to expect an email containing their activation code. For security reasons, we send Smartcards and card readers to the administrator who created the new user. They should arrive within five business days of the email</li><li>Once the user receives their activation code, they'll need to use this to login along with their 'Customer ID' and 'User ID'. The customer ID is the same one used by every user on your Bankline profile and the user ID will be the one you've created for them (as per the steps above). You'll need to share both these IDs with them.</li></ol>
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>Authorise a Change</b></h1>
-            <p>For any action subject to 'Dual administration', a second user needs to review the changes that the first user has made and either approve or reject them.</p>
-            <p>To do this:</p>
-            <ol type="1"><li>Go to the 'Authorise change' screen, which shows any pending changes you can authorise</li><li>Under the heading 'Details' select the change you want to approve or reject</li><li>From here you can selectto either accept or reject the changes</li><li>If this change requires a Smartcard, you'll be prompted to use it</li></ol>
-            <p><i>Handy tip - You can't view or approve any changes you've made yourself.</i></p>
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>Delete a User</b></h1>
-            <p>You must be an administrator to delete users:</p>
-            <ol type="1"><li>1.In the 'Administration' section, select 'Manage Users'.</li><li>2.Select the User ID of the relevant user and select 'Delete User'.</li></ol>
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <h1 class="w3-text-red w3-center"><b>FAQ</b></h1>
-            <h2><i>How do I get a replacement card reader or Smartcard?</i></h2>
-            <p><b>To order a Smartcard reader:</b></p>
-            <ol type="1"><li>From 'Administration' section, select 'Manage Users'</li><li>Select 'Order Smartcard reader'</li><li>Hit 'Continue', then 'Confirm'</li></ol>
-            <p><b>To order a replacement Smartcard:</b></p>
-            <ol type="1"><li>From 'Administration' section, select 'Manage Users'</li><li>Select relevant User ID</li><li>Scroll to the bottom and select 'Edit roles/Smartcard'</li><li>Now hit 'Order replacement Smartcard'</li><li>Select the address you'd like it sent to</li><li>If you want to order a Smartcard reader at the same time, check the 'New Smartcard reader required' box</li><li>Finally, hit 'Continue' then 'Confirm'</li></ol>
-            <p>Reminder: if you have Dual administration switched on, you'll need a second administrator to authorise your order</p>
-            <h2><i>My user has got their login details wrong and is now locked out of Bankline, how do I re-activate them?</i></h2>
-            <p>To help them regain access you can use the following options:</p>
-            <ol type="1"><li>If the user still remembers their PIN and password, go to 'Manage Users'</li><li>Select the User ID and then hit 'Re-instate User'</li><li>If they don't remember their PIN and password, from 'Manage Users' select the 'User ID'</li><li>Select 'Order Activation Code'</li></ol>
-            <h2><i>How do I re-instate a user who entered their PIN or password incorrectly?</i></h2>
-            <p>If a user has entered their PIN or password incorrectly, but they know the correct details, an administrator can re-instate them.</p>
-            <ol type="1"><li>From 'Administration' select 'Manage Users'</li><li>Click on the relevant User ID</li><li>Select 'Re-instate User'. The user will now be able to log in to the system using their exisiting PIN and password</li></ol>
-            <p><i>Handy hint: the user status on the 'Manage Users' screen needs to be disabled for the option to be available.</i></p>
-            <h2><i>How do I view, edit, delete or suspend users?</i></h2>
-            <ol type="1"><li>From 'Administration', select 'Manage Users'</li><li>Select the relevant User ID</li><li>3.This opens the 'Edit User' screen. From here you can view and edit the user's details and click through to edit roles, order a new activation code, and suspend or delete the user.</li></ol>
-            <p>If you have any further issues please visit: <a href="#" onclick=" window.open('https://help.bankline.rbs.com/help/administration/')">Admin Help Page</a></p>
-    </div>
-
-</div>
-
-<h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>BNP Paribas</b></h2>
-
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Search Users</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Maintain Users</b></button>
-</div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            
-    </div>
-
-</div>
-
-<h2 class="w3-xxlarge w3-text-red w3-margin-left"><b>Barclays.NET</b></h2>
-
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Create User</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Search Users</b></button>
-    <button class="myBtn_multi w3-button w3-round w3-white w3-padding-large w3-large w3-margin-top w3-margin-left w3-opacity w3-hover-opacity-off"><b>Maintain Users</b></button>
-</div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            
-        </div>
-
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            
-    </div>
-
-</div>
-    <script>
-        // Get the modal
-
-        var modalparent = document.getElementsByClassName("modal_multi");
-
-        // Get the button that opens the modal
-
-        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
-
-        // Get the <span> element that closes the modal
-        var span_close_multi = document.getElementsByClassName("close_multi");
-
-        // When the user clicks the button, open the modal
-        function setDataIndex() {
-
-            for (i = 0; i < modal_btn_multi.length; i++)
-            {
-                modal_btn_multi[i].setAttribute('data-index', i);
-                modalparent[i].setAttribute('data-index', i);
-                span_close_multi[i].setAttribute('data-index', i);
-            }
-        }
-
-
-
-        for (i = 0; i < modal_btn_multi.length; i++)
-        {
-            modal_btn_multi[i].onclick = function() {
-                var ElementIndex = this.getAttribute('data-index');
-                modalparent[ElementIndex].style.display = "block";
-            };
-
-            // When the user clicks on <span> (x), close the modal
-            span_close_multi[i].onclick = function() {
-                var ElementIndex = this.getAttribute('data-index');
-                modalparent[ElementIndex].style.display = "none";
-            };
-
-        }
-
-        window.onload = function() {
-
-            setDataIndex();
-        };
-
-        window.onclick = function(event) {
-            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
-                modalparent[event.target.getAttribute('data-index')].style.display = "none";
-            }
-
-            // OLD CODE
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        };
-
-//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
-
-// Get the modal
-
-        var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-        var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
-
-// When the user clicks on the button, open the modal
-
-        btn.onclick = function() {
-
-            modal.style.display = "block";
-        }
-
-// When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-
-
-    </script>
 
 </body>
 </html>
